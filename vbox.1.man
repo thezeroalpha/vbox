@@ -1,0 +1,70 @@
+.TH VBOX 1 "13 March 2021"
+.SH NAME
+vbox - Manipulate VirtualBox machines
+
+.SH SYNOPSIS
+\fBvbox\fP [ -h ]
+\fIcommand\fP
+
+.SH DESCRIPTION
+\fBvbox\fP lets you manipulate (start, stop, pause, suspend) VirtualBox VMs, and change shared folders.
+
+.SS Options
+.TP
+\fB-h\fP
+Get help.
+
+.SS Commands
+.TP
+\fBstart vm-name\fP
+Start the VM \fIvm-name\fP (in headless mode)
+
+.TP
+\fBstop vm-name\fP
+Stop the VM \fIvm-name\fP
+
+.TP
+\fBopen vm-name\fP
+Open the GUI for the VM \fIvm-name\fP
+
+.TP
+\fBlist\fP, \fBls\fP
+List VMs.
+
+.TP
+\fBrunning\fP
+List running VMs
+
+.TP
+\fBshare /local/path vm-name /mount/point\fP
+Share the local folder \fI/local/path\fP to VM \fIvm-name\fP at guest mountpoint \fI/mount/point\fP
+
+.TP
+\fBunshare /local/path vm-name\fP
+Unshare the local folder \fI/local/path\fP from VM \fIvm-name\fP.
+
+.TP
+\fBshared vm-name\fP
+List the folders shared with \fIvm-name\fP.
+
+.TP
+\fBpause vm-name\fP
+Pause the VM \fIvm-name\fP.
+
+.TP
+\fBresume vm-name\fP
+Resume the VM \fIvm-name\fP.
+
+.TP
+\fBinfo vm-name\fP
+Get information about the VM \fIvm-name\fP.
+
+.TP
+\fBstatus vm-name\fP
+Print the status of the VM \fIvm-name\fP.
+
+.SH "SEE ALSO"
+VBoxManage(1),
+.UR https://\:www.virtualbox.org/\:manual/\:ch08.html
+VirtualBox VBoxManage documentation
+.UE
