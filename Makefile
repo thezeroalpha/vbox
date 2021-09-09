@@ -1,3 +1,7 @@
+.POSIX:
+.PHONY: all install uninstall
+.SUFFIXES:
+
 prefix=/usr/local
 datarootdir=$(prefix)/share
 datadir=$(datarootdir)

@@ -19,6 +19,8 @@ Get help.
 \fBstart vm-name\fP
 Start the VM \fIvm-name\fP (in headless mode)
 
+\fBstartgui vm-name\fP
+Start the VM \fIvm-name\fP (in GUI mode)
 .TP
 \fBstop vm-name\fP
 Stop the VM \fIvm-name\fP

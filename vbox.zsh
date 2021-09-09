@@ -8,6 +8,7 @@ _vbox() {
   local -a arguments
   arguments=(
     'start:start a VM'
+    'startgui:start a VM in GUI mode'
     'stop:stop a VM'
     'open:open a VM, starting it if necessary'
     'pause:pause a VM'
@@ -43,7 +44,7 @@ _vbox() {
         ':hostpath:_files -/' \
         :machine:_vboxmachines
       ;;
-    start|stop|open|status|info|shared|pause|suspend|resume)
+    start|startgui|stop|open|status|info|shared|pause|suspend|resume)
       _arguments \
         :machine:_vboxmachines
       ;;
